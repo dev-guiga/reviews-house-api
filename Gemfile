@@ -15,6 +15,9 @@ gem "kamal", require: false
 gem "thruster", require: false
 gem "image_processing", "~> 1.2"
 
+gem "paranoia", ">= 2.1.5"
+gem "jbuilder", ">= 2.7"
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
@@ -27,4 +30,7 @@ group :development, :test do
   gem "factory_bot_rails", ">= 6.2"
   gem "faker", ">= 3.4.2"
   gem "webmock", ">= 3.23.1"
+  gem "bullet", ">= 6.1"
+
+  gem "dotenv-rails", ">= 2.1.1"
 end
