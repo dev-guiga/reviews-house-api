@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :dashboards
-      resources :reviews
-      resources :book_reviews
+
+      resources :reviews do
+        resources :book_reviews
+      end
+
       resources :interactions_reviews
 
       namespace :public do

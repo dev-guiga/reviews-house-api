@@ -20,6 +20,9 @@ gem "image_processing", "~> 2.1"
 gem "paranoia", ">= 2.1.5"
 gem "jbuilder", ">= 2.7"
 
+gem "redis", "~> 5.0"
+
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
@@ -35,4 +38,6 @@ group :development, :test do
   gem "bullet", ">= 6.1"
 
   gem "dotenv-rails", ">= 2.1.1"
+
+  gem "mock_redis", ">= 0.55.0"
 end

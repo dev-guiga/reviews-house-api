@@ -10,6 +10,11 @@ FactoryBot.define do
     review_status { :draft }
     overall_rating { Faker::Number.between(from: 1, to: 5) }
     deleted_at { nil }
+   is_public { true }
+
+    trait :public do
+      is_public { false }
+    end
 
     trait :published do
       review_status { :published }

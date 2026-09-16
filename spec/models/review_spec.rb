@@ -11,6 +11,7 @@ RSpec.describe Review, type: :model do
     it { is_expected.to have_db_column(:spoiler_warning).of_type(:boolean).with_options(null: false) }
     it { is_expected.to have_db_column(:review_status).of_type(:enum).with_options(null: false, default: "draft") }
     it { is_expected.to have_db_column(:overall_rating).of_type(:integer) }
+    it { is_expected.to have_db_column(:is_public).of_type(:boolean).with_options(null: false, default: false) }
     it { is_expected.to have_db_column(:deleted_at).of_type(:datetime) }
     it { is_expected.to have_db_index(:deleted_at) }
   end

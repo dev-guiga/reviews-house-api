@@ -11,6 +11,7 @@ class CreateReviews < ActiveRecord::Migration[8.1]
       t.string :external_source, null: false
       t.integer :external_id, null: false
       t.boolean :spoiler_warning, null: false
+      t.boolean :is_public, null: false, default: false
       t.enum :review_status, enum_type: :review_status, null: false, default: :draft
       t.integer :overall_rating
       t.timestamps null: false
