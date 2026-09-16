@@ -5,6 +5,8 @@ gem "pg", "~> 1.1"
 gem "puma", ">= 8.0.2"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
+gem "ruby-vips", "~> 2.0"
+
 gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"

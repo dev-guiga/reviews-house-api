@@ -1,0 +1,2 @@
+class InteractionsReview < ApplicationRecord
+end
